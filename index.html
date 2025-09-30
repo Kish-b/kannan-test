@@ -198,6 +198,60 @@ box-shadow: 0 0 20px rgba(252, 185, 0, 0.6);
     .footer .cont { text-decoration: none; color: var(--text-muted); margin-left: 6px; }
 
     /* Responsive */
+
+
+    /* Tablet View */
+@media (min-width: 769px) and (max-width: 1024px) {
+  h1.section-title { font-size: 2rem; text-align: center; }
+  h2.section-title { font-size: 1.6rem; text-align: center; }
+
+  .intro {
+    padding: 60px 30px;
+  }
+
+  .about, .booking, .features {
+    padding: 40px 30px;
+  }
+
+  .about img, .booking img {
+    max-width: 300px;
+    max-height: 350px;
+  }
+
+  .btn-book {
+    padding: 14px 60px;
+    font-size: 1rem;
+  }
+
+  .price-tag {
+    width: 90%;
+    padding: 10px 20px;
+  }
+
+  /* Adjust booking section alignment for tablets */
+  .booking .row {
+    flex-direction: column;
+    align-items: center;
+  }
+  .booking .col-md-6 {
+    max-width: 90%;
+  }
+
+  /* Features cards */
+  .features .col-md-3 {
+    flex: 0 0 50%;
+    max-width: 50%;
+  }
+
+  /* Footer text alignment */
+  .footer p {
+    text-align: center;
+    display: block;
+  }
+}
+
+
+
     @media(max-width:768px){
       h1.section-title { text-align:center; font-size:1.8rem; }
       h2.section-title { text-align:center; font-size:1.4rem; }
@@ -205,6 +259,18 @@ box-shadow: 0 0 20px rgba(252, 185, 0, 0.6);
       .about,.booking,.features { padding:30px 20px; }
       .btn-book { width:100%; padding:14px; }
       .price-tag { width:80%; }
+
+        #contact p {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  #contact p span {
+    display: block;
+    margin: 5px 0;
+  }
+
     }
   </style>
 </head>
